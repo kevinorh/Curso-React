@@ -8,7 +8,8 @@ export const FirstApp = ( {
   // console.log({title});
   return (
     <>
-        <h1>{title}</h1>
+        <h1 data-testid="test-title"> {title} </h1>
+        <h2>{subtitle}</h2>
         <h2>{subtitle}</h2>
         <h3>{name}</h3>
     </>
@@ -21,7 +22,7 @@ FirstApp.propTypes ={
 }
 
 FirstApp.defaultProps ={
-  title: 'No hay ningun título',
+  // title: 'No hay ningun título',
   subtitle: 'No hay subtitulo',
-  name: 'Kevin Tuca'
+  name: 'Kevin Ore'
 }
